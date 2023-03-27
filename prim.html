@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primek</title>
+</head>
+<body>
+    <h1>Prím számok</h1>
+    <script>
+        function prim(p){
+            let i=2
+            while(p%i>0 && i*i<=p) i++
+            let k=true
+            if(i*i<=p) k=false
+            else k=true
+            //i*i<=p ? false:true
+            return k
+        }
+        //let a=13
+        //if(prim(a)) document.write(a)
+        //else console.log(a)
+        for (let i = 2; i <=1000; i++) {
+            if(prim(i)) document.write(i,"<br>")
+            
+        }
+    </script>
+</body>
+</html>
